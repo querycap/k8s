@@ -1,0 +1,1 @@
+FROM docker.io/mirrorgooglecontainers/heapster-amd64:v1.5.4

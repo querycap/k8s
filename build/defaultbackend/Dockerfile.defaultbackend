@@ -1,0 +1,5 @@
+ARG VERSION
+FROM docker.io/mirrorgooglecontainers/defaultbackend-amd64:${VERSION} AS defaultbackend-amd64
+FROM docker.io/mirrorgooglecontainers/defaultbackend-arm64:${VERSION} AS defaultbackend-arm64
+
+FROM defaultbackend-${TARGETARCH}
