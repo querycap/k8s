@@ -1,5 +1,5 @@
 ARG VERSION
-FROM docker.io/mirrorgooglecontainers/heapster-amd64:${VERSION} AS heapster-amd64
-FROM docker.io/mirrorgooglecontainers/heapster-arm64:${VERSION} AS heapster-arm64
+FROM gcr.io/google-containers/heapster-amd64:${VERSION} AS heapster-amd64
+FROM gcr.io/google-containers/heapster-arm64:${VERSION} AS heapster-arm64
 
 FROM heapster-${TARGETARCH}
