@@ -1,1 +1,1 @@
-FROM docker.io/mirrorgooglecontainers/defaultbackend-amd64:1.5
+FROM gcr.io/google-containers/defaultbackend-amd64:1.5
